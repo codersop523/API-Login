@@ -5,7 +5,7 @@
     "lint": "eslint .",
     "serve": "firebase emulators:start --only functions",
     "shell": "firebase functions:shell",
-    "start": "npm run shell",
+    "start": "node index.js",
     "deploy": "firebase deploy --only functions",
     "logs": "firebase functions:log"
   },
@@ -14,12 +14,12 @@
   },
   "main": "index.js",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "express": "^5.2.1",
     "firebase-admin": "^13.6.0",
     "firebase-functions": "^7.0.0",
-    "cors": "^2.8.5",
-    "bcryptjs": "^2.4.3",
     "jsonwebtoken": "^9.0.2"
-
   },
   "devDependencies": {
     "eslint": "^8.15.0",
